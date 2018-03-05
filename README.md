@@ -1,2 +1,2 @@
 # hr-java-solutions
-Solutions to hackerrank algorithm problems
+Solutions to Hackerrank algorithm problems
