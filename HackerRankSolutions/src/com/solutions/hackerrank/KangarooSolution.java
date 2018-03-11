@@ -14,40 +14,25 @@ public class KangarooSolution {
 
     static String kangaroo(int x1, int v1, int x2, int v2) {
         // Complete this function
-         //int d1=0,d2=0;
+         
        if((x2>x1)&&(v2>v1))
        {  
            return "NO";
        }
        else{
+           try{
            
-           
-           if(v2>v1){
-            if((x1-x2)%(v2-v1)==0)
+                if((x1-x2)%(v2-v1)==0)
                return "YES";
            else 
                return "NO";
            }
-          
            
-           //BRUTE FORCE APPROACH
-     /*
-           for(int i=0;i<10000;i++){
-            d1= x1+v1*i;
-            d2= x2+v2*i;
-            
-            if(d1==d2)
-            {
-                System.out.println("i:"+i);
-                return "YES";
-            }
-                
-            
-        }//end of for
-    */
+          catch(Exception e){
+           return "NO";
+           }
        }//end of else
        
-       return "NO";
     }
 
     public static void main(String[] args) {
@@ -61,3 +46,23 @@ public class KangarooSolution {
         System.out.println(result);
     }
 }
+
+
+///
+
+    //BRUTE FORCE APPROACH
+     /*
+//int d1=0,d2=0;
+           for(int i=0;i<10000;i++){
+            d1= x1+v1*i;
+            d2= x2+v2*i;
+            
+            if(d1==d2)
+            {
+                System.out.println("i:"+i);
+                return "YES";
+            }
+                
+            
+        }//end of for
+    */
